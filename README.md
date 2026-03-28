@@ -24,6 +24,12 @@ npm install
 npm run dev
 ```
 
+## Live demo
+
+Once GitHub Pages is enabled for this repository, the game will be available at:
+
+`https://milyndsilvadev-pixel.github.io/Claw-Pong/`
+
 ## Build
 
 ```bash
