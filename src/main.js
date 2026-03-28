@@ -219,6 +219,8 @@ function update() {
       }
 
       if (blocks.every((candidate) => !candidate.alive)) {
+        state.score += 500
+        syncHud()
         state.running = false
         state.win = true
       }
@@ -313,9 +315,11 @@ function drawOverlay() {
   ctx.font = '700 42px Inter, system-ui, sans-serif'
 
   if (state.win) {
-    ctx.fillText('You won Claw Pong ✨', canvas.width / 2, canvas.height / 2 - 10)
+    ctx.fillText('You won Claw Pong ✨', canvas.width / 2, canvas.height / 2 - 20)
+    ctx.font = '600 24px Inter, system-ui, sans-serif'
+    ctx.fillText(`Final score: ${state.score}`, canvas.width / 2, canvas.height / 2 + 16)
     ctx.font = '500 20px Inter, system-ui, sans-serif'
-    ctx.fillText('Press Space to play again', canvas.width / 2, canvas.height / 2 + 32)
+    ctx.fillText('Press Space to play again', canvas.width / 2, canvas.height / 2 + 52)
   } else if (state.gameOver) {
     ctx.fillText('Game over', canvas.width / 2, canvas.height / 2 - 10)
     ctx.font = '500 20px Inter, system-ui, sans-serif'
