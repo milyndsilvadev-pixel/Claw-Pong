@@ -30,6 +30,16 @@ npm run dev
 npm run build
 ```
 
+## License
+
+This project is licensed under the MIT License. See [`LICENSE`](./LICENSE).
+
+## Screenshots
+
+### Gameplay preview
+
+![Claw Pong gameplay preview](./docs/claw-pong-screenshot.png)
+
 ## Next steps
 
 This first pass sets up:
