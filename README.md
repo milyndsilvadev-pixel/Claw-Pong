@@ -30,6 +30,16 @@ npm run dev
 npm run build
 ```
 
+## License
+
+This project is licensed under the MIT License. See [`LICENSE`](./LICENSE).
+
+## Screenshots
+
+### Gameplay preview
+
+![Claw Pong gameplay preview](./docs/claw-pong-screenshot.png)
+
 ## Next steps
 
 This first pass sets up:
@@ -37,5 +47,14 @@ This first pass sets up:
 - playable game loop
 - scoring, lives, and win/lose states
 - modern neon visual style
+- mouse-based paddle control
 
 Future improvements can add sound, power-ups, levels, particle bursts, and mobile touch controls.
+
+## Polish roadmap
+
+Planned quality upgrades for the next PR:
+- particle hit effects
+- progressive difficulty tuning
+- touch controls for mobile
+- better sound and feedback
